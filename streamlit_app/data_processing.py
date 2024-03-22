@@ -21,7 +21,6 @@ def filter_by_sentiment(df, sentiment='All'):
     else:
         return df[df['sentiment'] == sentiment]
 
-
 def safely_convert_to_list(row):
     try:
         if isinstance(row, str):
