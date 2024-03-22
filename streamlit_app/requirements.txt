@@ -6,3 +6,4 @@ wordcloud
 nltk
 sqlalchemy
 pytz
+psycopg2
