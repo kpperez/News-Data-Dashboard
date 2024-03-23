@@ -18,7 +18,7 @@ def main():
     st.write(f"This data is sourced every 4 hours using the [News Data API]({news_data_url}) with a keyword search of **Colorado**.")
     st.image("streamlit_app/colorado-banner.png")
     github_url = "https://github.com/kpperez"
-    st.write(f"Check out the [full code](https://github.com/kpperez/News-Data-Dashboard) and my other projects at [GitHub]({github_url})")
+    st.write(f"Check out the [full code](https://github.com/kpperez/News-Data-Dashboard) and my other projects at [GitHub]({github_url})!")
 
     # Load and preprocess data
     df = load_and_preprocess_data()
