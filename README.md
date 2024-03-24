@@ -2,12 +2,12 @@
 URL: [https://news-data-dashboard-kpperez.streamlit.app/](https://news-data-dashboard-kpperez.streamlit.app/)
 ![news_data_pipeline](https://github.com/kpperez/News-Data-Dashboard/assets/123265217/a38216d3-e019-4c57-8081-04e2ec014ef7)
 ## Table of Contents
-- [Description]()
-  - [Overview]()
-  - [Technologies Used]()
-  - [Challenges]()
-  - [Future Modifications]()
-- [Configuration Steps]()
+- [Description](https://github.com/kpperez/News-Data-Dashboard/blob/main/README.md#description)
+  - [Overview](https://github.com/kpperez/News-Data-Dashboard/blob/main/README.md#overview)
+  - [Technologies Used](https://github.com/kpperez/News-Data-Dashboard/blob/main/README.md#technologies-used)
+  - [Challenges](https://github.com/kpperez/News-Data-Dashboard/blob/main/README.md#challenges)
+  - [Future Modifications](https://github.com/kpperez/News-Data-Dashboard/blob/main/README.md#future-modifications)
+- [Configuration Steps](https://github.com/kpperez/News-Data-Dashboard/blob/main/README.md#configuration-steps)
 ## Description
 ### Overview:
 This repository hosts the code for a comprehensive data pipeline project designed to aggregate, process, and visualize news data in real-time. The core of this project is a robust data pipeline that fetches news data from the newsdata.io API, performs a series of transformations including cleaning, natural language processing (NLP) for tokenization, sentiment analysis, and classification, and then loads the processed data into a PostgreSQL database hosted on AWS RDS. The pipeline is orchestrated using Apache Airflow and runs on an AWS EC2 instance, ensuring scalable and reliable data processing.
@@ -46,7 +46,7 @@ Created an AWS RDS database instance, setting up the necessary security credenti
 Launched an EC2 instance with Ubuntu, ensuring security credentials were in place including the pem key for SSH access. Updated the system and set up a Python environment with all required libraries (e.g., airflow, nltk, pandas) and configured AWS CLI for RDS connectivity.
 
 4. **Development Environment Preparation:** <br>
-Utilized VSCode with SSH remote to connect to the EC2 instance for efficient code editing. Developed a Python DAG for Airflow to handle data extraction from the API, transformation (including cleaning, NLP tokenization, sentiment analysis, and classification), and loading into the RDS database.
+Utilized VSCode with SSH remote to connect to the EC2 instance for efficient code editing. Developed a [Python DAG](https://github.com/kpperez/News-Data-Dashboard/blob/main/news_data_dag.py) for Airflow to handle data extraction from the API, transformation (including cleaning, NLP tokenization, sentiment analysis, and classification), and loading into the RDS database.
 
 5. **Airflow Pipeline Validation:** <br>
 Tested the Airflow pipeline to ensure accurate periodic data extraction and loading (every four hours) into the RDS database, confirming operational integrity and data quality.
