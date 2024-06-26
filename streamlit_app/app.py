@@ -15,7 +15,8 @@ def main():
     st.title("News Headline Dashboard \U0001F4F0")
     st.subheader("Sentiment and N-gram Analysis")
     news_data_url = "https://newsdata.io/"
-    st.write(f"This data is sourced every 4 hours using the [News Data API]({news_data_url}) with a keyword search of **Colorado**.")
+    st.write(f"This data was sourced every 4 hours using the [News Data API]({news_data_url}) with a keyword search of **Colorado**.")
+    st.write(f"**Please Note:** This pipeline is no longer live. After three months of API requests, we collected over 20,000 unique news articles!")
     st.image("streamlit_app/colorado-banner.png")
     github_url = "https://github.com/kpperez"
     st.write(f"Check out the [full code](https://github.com/kpperez/News-Data-Dashboard) and my other projects at [GitHub]({github_url})!")
